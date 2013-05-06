@@ -18,7 +18,7 @@ class BoardMacro(WikiMacroBase):
 
 [[TicketQuery(status=new|reopened,milestone=%(milestone)s,format=count)]]
 
-[[TicketQuery(status=new|reopened,order=priority,milestone=%(milestone)s,format=table,col=summary,priority)]]
+[[TicketQuery(status=new|reopened,order=summary,milestone=%(milestone)s,format=table,col=summary,priority)]]
 
 }}}
 
