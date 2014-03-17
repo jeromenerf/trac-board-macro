@@ -51,7 +51,7 @@ class BoardMacro(WikiMacroBase):
 = DONE =
 [[TicketQuery(status=closed,milestone=%(milestone)s,format=count)]]
 
-[[TicketQuery(status=closed,order=changetime,desc=1,milestone=%(milestone)s,format=table,col=resolution|summary)]]
+[[TicketQuery(status=closed,order=changetime,desc=1,max=20,milestone=%(milestone)s,format=table,col=resolution|summary)]]
 
 }}}
 
