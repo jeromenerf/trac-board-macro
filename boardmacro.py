@@ -27,9 +27,9 @@ class BoardMacro(WikiMacroBase):
 #!div style='float:left; width:23%%' 
 
 = DOING =
-[[TicketQuery(status=accepted|assigned,milestone=%(milestone)s,keywords!~=test,format=count)]]
+[[TicketQuery(status=accepted|assigned,milestone=%(milestone)s,keywords~=doing,format=count)]]
 
-[[TicketQuery(status=accepted|assigned,order=priority,milestone=%(milestone)s,keywords!~=test,format=table,col=summary|owner)]]
+[[TicketQuery(status=accepted|assigned,order=priority,milestone=%(milestone)s,keywords~=doing,format=table,col=summary|owner)]]
 
 }}}
 
