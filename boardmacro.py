@@ -16,9 +16,9 @@ class BoardMacro(WikiMacroBase):
 
 = TODO =
 
-[[TicketQuery(status=new|reopened,milestone=%(milestone)s,format=count)]]
+[[TicketQuery(status=new|reopened|accepted|assigned,keywords!~=doing|test,milestone=%(milestone)s,format=count)]]
 
-[[TicketQuery(status=new|reopened,order=summary,milestone=%(milestone)s,format=table,col=summary,priority)]]
+[[TicketQuery(status=new|reopened|accepted|assigned,order=summary,keywords!~=doing|test,milestone=%(milestone)s,format=table,col=summary,priority)]]
 
 }}}
 
